@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe game in JS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Tic tac toe Game</h1>
+      </div>
+      <div class="userInfo">
+        <form action="">
+          <div class="firstUser">
+            <input
+              id="userOne"
+              onchange="handleChange()"
+              type="text"
+              placeholder="Enter first user name"
+              required
+            />
+            <input
+              onclick="ChooseSymbol1()"
+              id="X1"
+              type="radio"
+              name="User1"
+              value="X"
+              required
+            />X
+            <input
+              onclick="ChooseSymbol2()"
+              id="O1"
+              type="radio"
+              name="User1"
+              value="O"
+              required
+            />O
+          </div>
+  
+          <br />
+  
+          <div class="secondUser">
+            <input
+              id="userTwo"
+              onchange="handleChange()"
+              type="text"
+              placeholder="Enter second user name"
+              required
+            />
+            <input
+              onclick="ChooseSymbol3()"
+              id="X2"
+              type="radio"
+              name="User2"
+              value="X"
+              required
+            />X
+            <input
+              onclick="ChooseSymbol4()"
+              id="O2"
+              type="radio"
+              name="User2"
+              value="O"
+              required
+            />O
+          </div>
+  
+          <div class="buttons">
+            <input
+              onclick="getName()"
+              class="btn"
+              id="SubmitId"
+              value="Submit"
+              type="button"
+            />
+  
+            <input type="reset" value="Reset" />
+          </div>
+          <!-- <hr> -->
+  
+          <span id="userName1"></span>
+          <span id="radio1"></span>
+          <br />
+          <span id="userName2"></span>
+          <span id="radio2"></span>
+        </form>
+      </div>
+      <!-- <hr id="hr" /> -->
+      <div class="box boxDeactive">
+        <div class="players">
+          <div class="player1 active"><span id="User1Turn">User 1</span></div>
+          <div class="player2"><span id="User2turn">User 2</span></div>
+        </div>
+        <!-- <span id="player1">1</span>
+      <span id="player2">2</span> -->
+  
+        <div class="game-board">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+      </div>
+  
+      <div class="result inactive">
+        <h1></h1>
+        <button>Restart</button>
+      </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
